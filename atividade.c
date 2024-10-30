@@ -76,14 +76,14 @@ void pesquisar(){
     }
     else{
         printf("Nome a pesquisar? ");
-        scanf("%s", pesquisa); // Ler o nome a ser pesquisado
+        scanf("%s", pesquisa); 
         
         for (int i = 0; i < contacontatos; i++) {
             if (strcmp(contato[i].name, pesquisa) == 0) {
                 printf("Nome: %s\n", contato[i].name);
                 printf("Número: %i\n", contato[i].number);
-                encontrado = 1; // Marca que o contato foi encontrado
-                break; // Para quando o contato é encontrado
+                encontrado = 1; 
+                break; 
             }
         }
 
